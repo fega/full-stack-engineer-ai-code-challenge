@@ -1,0 +1,38 @@
+[
+  {
+    "id": "spool-001",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-001",
+    "dueDate": "2026-06-01",
+    "bom": [{ "partNumber": "90ELBOW", "quantity": 4 }],
+    "statusHistory": [
+      { "station": 0, "changedAt": "2026-05-25T12:00:00Z", "changedBy": "seed" },
+      { "station": 1, "changedAt": "2026-05-26T12:00:00Z", "changedBy": "seed" },
+      { "station": 2, "changedAt": "2026-05-27T12:00:00Z", "changedBy": "seed" }
+    ]
+  },
+  {
+    "id": "spool-002",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-002",
+    "dueDate": "2026-05-30",
+    "bom": [{ "partNumber": "TEE", "quantity": 2 }],
+    "statusHistory": [
+      { "station": 0, "changedAt": "2026-05-20T12:00:00Z", "changedBy": "seed" },
+      { "station": 1, "changedAt": "2026-05-21T12:00:00Z", "changedBy": "seed" },
+      { "station": 2, "changedAt": "2026-05-22T12:00:00Z", "changedBy": "seed" },
+      { "station": 3, "changedAt": "2026-05-23T12:00:00Z", "changedBy": "seed" },
+      { "station": 4, "changedAt": "2026-05-24T12:00:00Z", "changedBy": "seed" }
+    ]
+  },
+  {
+    "id": "spool-003",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-001",
+    "dueDate": "2026-05-15",
+    "bom": [{ "partNumber": "COUPLING", "quantity": 8 }],
+    "statusHistory": [
+      { "station": 0, "changedAt": "2026-05-10T12:00:00Z", "changedBy": "seed" }
+    ]
+  }
+]
