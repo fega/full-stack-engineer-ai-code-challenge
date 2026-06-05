@@ -3,36 +3,7448 @@
     "id": "spool-001",
     "packageId": "pkg-a",
     "spoolNumber": "A-001",
-    "dueDate": "2026-06-01",
-    "bom": [{ "partNumber": "90ELBOW", "quantity": 4 }],
+    "dueDate": "2026-06-10",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 3
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 4
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 11
+      }
+    ],
     "statusHistory": [
-      { "station": 0, "changedAt": "2026-05-25T12:00:00Z", "changedBy": "seed" },
-      { "station": 1, "changedAt": "2026-05-26T12:00:00Z", "changedBy": "seed" },
-      { "station": 2, "changedAt": "2026-05-27T12:00:00Z", "changedBy": "seed" }
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      }
     ]
   },
   {
     "id": "spool-002",
-    "packageId": "pkg-a",
-    "spoolNumber": "A-002",
-    "dueDate": "2026-05-30",
-    "bom": [{ "partNumber": "TEE", "quantity": 2 }],
+    "packageId": "pkg-b",
+    "spoolNumber": "B-002",
+    "dueDate": "2026-06-19",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 6
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 1
+      }
+    ],
     "statusHistory": [
-      { "station": 0, "changedAt": "2026-05-20T12:00:00Z", "changedBy": "seed" },
-      { "station": 1, "changedAt": "2026-05-21T12:00:00Z", "changedBy": "seed" },
-      { "station": 2, "changedAt": "2026-05-22T12:00:00Z", "changedBy": "seed" },
-      { "station": 3, "changedAt": "2026-05-23T12:00:00Z", "changedBy": "seed" },
-      { "station": 4, "changedAt": "2026-05-24T12:00:00Z", "changedBy": "seed" }
+      {
+        "station": 0,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
     ]
   },
   {
     "id": "spool-003",
-    "packageId": "pkg-b",
-    "spoolNumber": "B-001",
-    "dueDate": "2026-05-15",
-    "bom": [{ "partNumber": "COUPLING", "quantity": 8 }],
+    "packageId": "pkg-c",
+    "spoolNumber": "C-003",
+    "dueDate": "2026-05-18",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 11
+      }
+    ],
     "statusHistory": [
-      { "station": 0, "changedAt": "2026-05-10T12:00:00Z", "changedBy": "seed" }
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-004",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-004",
+    "dueDate": "2026-06-17",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-005",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-005",
+    "dueDate": "2026-06-05",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-006",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-006",
+    "dueDate": "2026-06-27",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-007",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-007",
+    "dueDate": "2026-05-08",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-008",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-008",
+    "dueDate": "2026-06-15",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-009",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-009",
+    "dueDate": "2026-05-21",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 2
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-010",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-010",
+    "dueDate": "2026-05-14",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-31T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-011",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-011",
+    "dueDate": "2026-06-25",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 9
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-012",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-012",
+    "dueDate": "2026-06-01",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-013",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-013",
+    "dueDate": "2026-05-17",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 3
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 4
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-014",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-014",
+    "dueDate": "2026-06-15",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-015",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-015",
+    "dueDate": "2026-05-30",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-016",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-016",
+    "dueDate": "2026-05-11",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 11
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-017",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-017",
+    "dueDate": "2026-05-19",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 9
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 1
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-018",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-018",
+    "dueDate": "2026-06-10",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 5
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 8
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-019",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-019",
+    "dueDate": "2026-06-20",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 6
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 2
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-14T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-020",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-020",
+    "dueDate": "2026-05-27",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 6
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-021",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-021",
+    "dueDate": "2026-06-10",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-022",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-022",
+    "dueDate": "2026-05-30",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 9
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-023",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-023",
+    "dueDate": "2026-05-29",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-024",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-024",
+    "dueDate": "2026-05-31",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 4
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-025",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-025",
+    "dueDate": "2026-06-23",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-026",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-026",
+    "dueDate": "2026-05-24",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 11
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-027",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-027",
+    "dueDate": "2026-05-28",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-028",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-028",
+    "dueDate": "2026-06-11",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-029",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-029",
+    "dueDate": "2026-05-27",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-030",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-030",
+    "dueDate": "2026-06-04",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 11
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 11
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-031",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-031",
+    "dueDate": "2026-06-11",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-032",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-032",
+    "dueDate": "2026-06-22",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 2
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 1
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-033",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-033",
+    "dueDate": "2026-06-24",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 1
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-034",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-034",
+    "dueDate": "2026-05-21",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 6
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 3
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-035",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-035",
+    "dueDate": "2026-06-27",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 1
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-036",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-036",
+    "dueDate": "2026-05-12",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-23T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-037",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-037",
+    "dueDate": "2026-06-11",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 6
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-038",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-038",
+    "dueDate": "2026-06-13",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 6
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 6
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-039",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-039",
+    "dueDate": "2026-05-27",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 11
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-040",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-040",
+    "dueDate": "2026-06-11",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 1
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-041",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-041",
+    "dueDate": "2026-06-16",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 1
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 6
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-042",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-042",
+    "dueDate": "2026-06-28",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 1
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 1
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-043",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-043",
+    "dueDate": "2026-05-07",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 10
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 2
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-044",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-044",
+    "dueDate": "2026-06-03",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-045",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-045",
+    "dueDate": "2026-05-21",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 1
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 11
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-046",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-046",
+    "dueDate": "2026-05-27",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 8
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-047",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-047",
+    "dueDate": "2026-05-17",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 11
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-26T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-048",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-048",
+    "dueDate": "2026-05-26",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 5
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-049",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-049",
+    "dueDate": "2026-06-15",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 3
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-050",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-050",
+    "dueDate": "2026-06-15",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 12
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-051",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-051",
+    "dueDate": "2026-06-06",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 12
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 8
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-052",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-052",
+    "dueDate": "2026-05-24",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 3
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-053",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-053",
+    "dueDate": "2026-06-13",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 11
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 8
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-054",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-054",
+    "dueDate": "2026-06-06",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-055",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-055",
+    "dueDate": "2026-06-19",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-056",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-056",
+    "dueDate": "2026-06-23",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-057",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-057",
+    "dueDate": "2026-06-16",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 5
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 2
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-058",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-058",
+    "dueDate": "2026-06-29",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 7
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-13T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-059",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-059",
+    "dueDate": "2026-06-06",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 8
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-060",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-060",
+    "dueDate": "2026-06-09",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 6
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 2
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-061",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-061",
+    "dueDate": "2026-05-21",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 4
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-062",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-062",
+    "dueDate": "2026-06-16",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 11
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 12
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-063",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-063",
+    "dueDate": "2026-06-08",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 1
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-064",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-064",
+    "dueDate": "2026-06-19",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 11
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 3
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-065",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-065",
+    "dueDate": "2026-05-09",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 2
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 12
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-14T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-066",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-066",
+    "dueDate": "2026-05-28",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-067",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-067",
+    "dueDate": "2026-06-27",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 12
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-068",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-068",
+    "dueDate": "2026-06-17",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 8
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-069",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-069",
+    "dueDate": "2026-06-09",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 6
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 12
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-070",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-070",
+    "dueDate": "2026-06-20",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-071",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-071",
+    "dueDate": "2026-06-11",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 3
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-072",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-072",
+    "dueDate": "2026-06-12",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 6
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 5
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-18T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-073",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-073",
+    "dueDate": "2026-05-13",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 4
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-04T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-074",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-074",
+    "dueDate": "2026-05-18",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 8
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-23T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-075",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-075",
+    "dueDate": "2026-06-09",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 9
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-076",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-076",
+    "dueDate": "2026-05-09",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 5
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-077",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-077",
+    "dueDate": "2026-06-28",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 11
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-078",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-078",
+    "dueDate": "2026-05-13",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 4
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 8
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-079",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-079",
+    "dueDate": "2026-06-25",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 3
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 11
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-080",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-080",
+    "dueDate": "2026-06-13",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-081",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-081",
+    "dueDate": "2026-06-25",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-082",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-082",
+    "dueDate": "2026-06-02",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-083",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-083",
+    "dueDate": "2026-06-11",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 6
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-084",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-084",
+    "dueDate": "2026-06-01",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 7
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 4
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-085",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-085",
+    "dueDate": "2026-06-14",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 12
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-086",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-086",
+    "dueDate": "2026-05-20",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-087",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-087",
+    "dueDate": "2026-06-01",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-088",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-088",
+    "dueDate": "2026-05-25",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 4
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 8
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-31T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-089",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-089",
+    "dueDate": "2026-05-27",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 9
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-090",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-090",
+    "dueDate": "2026-05-07",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 11
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-091",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-091",
+    "dueDate": "2026-05-25",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-18T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-26T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-092",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-092",
+    "dueDate": "2026-06-01",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 5
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-093",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-093",
+    "dueDate": "2026-06-17",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 1
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 3
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-094",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-094",
+    "dueDate": "2026-06-12",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-095",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-095",
+    "dueDate": "2026-06-26",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 2
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-18T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-096",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-096",
+    "dueDate": "2026-06-02",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 5
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-097",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-097",
+    "dueDate": "2026-05-26",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-098",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-098",
+    "dueDate": "2026-06-17",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-099",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-099",
+    "dueDate": "2026-06-17",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 6
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-100",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-100",
+    "dueDate": "2026-06-07",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-101",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-101",
+    "dueDate": "2026-06-11",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-102",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-102",
+    "dueDate": "2026-06-12",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 5
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 9
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-103",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-103",
+    "dueDate": "2026-05-14",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 4
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-104",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-104",
+    "dueDate": "2026-05-29",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-105",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-105",
+    "dueDate": "2026-06-27",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 4
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-106",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-106",
+    "dueDate": "2026-06-01",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-107",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-107",
+    "dueDate": "2026-06-20",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-108",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-108",
+    "dueDate": "2026-06-10",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-109",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-109",
+    "dueDate": "2026-05-28",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-110",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-110",
+    "dueDate": "2026-05-29",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-31T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-111",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-111",
+    "dueDate": "2026-05-29",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 3
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 12
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-112",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-112",
+    "dueDate": "2026-06-27",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 3
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-113",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-113",
+    "dueDate": "2026-05-27",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-114",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-114",
+    "dueDate": "2026-06-17",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 3
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 6
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-115",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-115",
+    "dueDate": "2026-05-08",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 4
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-116",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-116",
+    "dueDate": "2026-06-11",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 4
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-18T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-117",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-117",
+    "dueDate": "2026-06-27",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 8
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-118",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-118",
+    "dueDate": "2026-06-05",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-119",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-119",
+    "dueDate": "2026-06-05",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 3
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-120",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-120",
+    "dueDate": "2026-06-02",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-121",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-121",
+    "dueDate": "2026-06-29",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-122",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-122",
+    "dueDate": "2026-05-25",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-123",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-123",
+    "dueDate": "2026-05-28",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-124",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-124",
+    "dueDate": "2026-05-23",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-125",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-125",
+    "dueDate": "2026-06-19",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-126",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-126",
+    "dueDate": "2026-06-20",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-127",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-127",
+    "dueDate": "2026-05-10",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-128",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-128",
+    "dueDate": "2026-06-25",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 10
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-129",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-129",
+    "dueDate": "2026-05-07",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 10
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 7
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-14T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-130",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-130",
+    "dueDate": "2026-06-18",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 3
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-131",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-131",
+    "dueDate": "2026-05-29",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 2
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-132",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-132",
+    "dueDate": "2026-05-22",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 1
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-133",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-133",
+    "dueDate": "2026-06-22",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-134",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-134",
+    "dueDate": "2026-06-09",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-135",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-135",
+    "dueDate": "2026-06-23",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 11
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 1
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-136",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-136",
+    "dueDate": "2026-06-04",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 2
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-137",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-137",
+    "dueDate": "2026-05-20",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-138",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-138",
+    "dueDate": "2026-06-07",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 1
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-139",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-139",
+    "dueDate": "2026-05-18",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 2
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 11
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-140",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-140",
+    "dueDate": "2026-06-04",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 3
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 4
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-141",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-141",
+    "dueDate": "2026-06-06",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 6
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 4
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-142",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-142",
+    "dueDate": "2026-06-19",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 4
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-143",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-143",
+    "dueDate": "2026-05-30",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 12
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-144",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-144",
+    "dueDate": "2026-06-28",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-145",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-145",
+    "dueDate": "2026-05-25",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-146",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-146",
+    "dueDate": "2026-05-30",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 4
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-28T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-147",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-147",
+    "dueDate": "2026-06-14",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-148",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-148",
+    "dueDate": "2026-06-19",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 11
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-149",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-149",
+    "dueDate": "2026-06-12",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-150",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-150",
+    "dueDate": "2026-05-23",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-151",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-151",
+    "dueDate": "2026-06-12",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-152",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-152",
+    "dueDate": "2026-06-20",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-153",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-153",
+    "dueDate": "2026-05-24",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 6
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 9
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-154",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-154",
+    "dueDate": "2026-06-29",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 3
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-155",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-155",
+    "dueDate": "2026-06-02",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 3
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 11
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-156",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-156",
+    "dueDate": "2026-06-14",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-157",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-157",
+    "dueDate": "2026-05-31",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 12
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-23T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-158",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-158",
+    "dueDate": "2026-06-16",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-159",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-159",
+    "dueDate": "2026-06-19",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 12
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-160",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-160",
+    "dueDate": "2026-05-11",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 7
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-04T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-161",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-161",
+    "dueDate": "2026-05-31",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 11
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 3
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-162",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-162",
+    "dueDate": "2026-05-20",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-163",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-163",
+    "dueDate": "2026-06-21",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-164",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-164",
+    "dueDate": "2026-06-06",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 8
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 7
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-165",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-165",
+    "dueDate": "2026-06-02",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 12
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 5
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 12
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-166",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-166",
+    "dueDate": "2026-06-06",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-167",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-167",
+    "dueDate": "2026-06-06",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 11
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-168",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-168",
+    "dueDate": "2026-06-29",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 11
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 11
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-169",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-169",
+    "dueDate": "2026-06-01",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 12
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-170",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-170",
+    "dueDate": "2026-05-28",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 1
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 8
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-171",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-171",
+    "dueDate": "2026-06-17",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-172",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-172",
+    "dueDate": "2026-06-20",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-20T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-173",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-173",
+    "dueDate": "2026-06-09",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 11
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 3
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-174",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-174",
+    "dueDate": "2026-05-07",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-175",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-175",
+    "dueDate": "2026-05-17",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-176",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-176",
+    "dueDate": "2026-05-20",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 11
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 8
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-177",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-177",
+    "dueDate": "2026-06-27",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 10
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 7
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 3
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-178",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-178",
+    "dueDate": "2026-05-09",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 1
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 3
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-179",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-179",
+    "dueDate": "2026-06-19",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 8
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-13T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-180",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-180",
+    "dueDate": "2026-05-30",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 4
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-181",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-181",
+    "dueDate": "2026-05-07",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 2
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 10
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-27T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-182",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-182",
+    "dueDate": "2026-06-08",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-183",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-183",
+    "dueDate": "2026-05-19",
+    "bom": [
+      {
+        "partNumber": "UNION",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-184",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-184",
+    "dueDate": "2026-06-28",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 2
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 4
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-185",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-185",
+    "dueDate": "2026-06-20",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 5
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-186",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-186",
+    "dueDate": "2026-06-16",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 8
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 12
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 6
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-187",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-187",
+    "dueDate": "2026-05-19",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 5
+      },
+      {
+        "partNumber": "COUPLING",
+        "quantity": 10
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-03T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-188",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-188",
+    "dueDate": "2026-06-17",
+    "bom": [
+      {
+        "partNumber": "FLANGE",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-19T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-189",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-189",
+    "dueDate": "2026-06-25",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 1
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-190",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-190",
+    "dueDate": "2026-06-05",
+    "bom": [
+      {
+        "partNumber": "VALVE",
+        "quantity": 3
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-191",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-191",
+    "dueDate": "2026-05-27",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 4
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-21T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-22T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-23T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-25T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-192",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-192",
+    "dueDate": "2026-06-25",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 10
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-24T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-25T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-27T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-193",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-193",
+    "dueDate": "2026-05-24",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 7
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-11T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-13T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-05-31T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-194",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-194",
+    "dueDate": "2026-06-12",
+    "bom": [
+      {
+        "partNumber": "CAP",
+        "quantity": 10
+      },
+      {
+        "partNumber": "CAP",
+        "quantity": 2
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-10T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-12T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-14T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-195",
+    "packageId": "pkg-c",
+    "spoolNumber": "C-195",
+    "dueDate": "2026-06-03",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 9
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 5
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 1
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-07T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-196",
+    "packageId": "pkg-d",
+    "spoolNumber": "D-196",
+    "dueDate": "2026-05-27",
+    "bom": [
+      {
+        "partNumber": "COUPLING",
+        "quantity": 7
+      },
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 7
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 11
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-26T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-02T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-197",
+    "packageId": "pkg-e",
+    "spoolNumber": "E-197",
+    "dueDate": "2026-06-07",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 11
+      },
+      {
+        "partNumber": "REDUCER",
+        "quantity": 5
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-198",
+    "packageId": "pkg-f",
+    "spoolNumber": "F-198",
+    "dueDate": "2026-06-03",
+    "bom": [
+      {
+        "partNumber": "90ELBOW",
+        "quantity": 9
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-04T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-199",
+    "packageId": "pkg-a",
+    "spoolNumber": "A-199",
+    "dueDate": "2026-06-01",
+    "bom": [
+      {
+        "partNumber": "REDUCER",
+        "quantity": 11
+      },
+      {
+        "partNumber": "UNION",
+        "quantity": 11
+      },
+      {
+        "partNumber": "TEE",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-04-28T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-04-29T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-04-30T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-01T12:00:00.000Z",
+        "changedBy": "seed"
+      }
+    ]
+  },
+  {
+    "id": "spool-200",
+    "packageId": "pkg-b",
+    "spoolNumber": "B-200",
+    "dueDate": "2026-05-17",
+    "bom": [
+      {
+        "partNumber": "TEE",
+        "quantity": 11
+      },
+      {
+        "partNumber": "VALVE",
+        "quantity": 2
+      },
+      {
+        "partNumber": "FLANGE",
+        "quantity": 4
+      }
+    ],
+    "statusHistory": [
+      {
+        "station": 0,
+        "changedAt": "2026-05-03T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 1,
+        "changedAt": "2026-05-05T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 2,
+        "changedAt": "2026-05-06T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 3,
+        "changedAt": "2026-05-08T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 4,
+        "changedAt": "2026-05-09T12:00:00.000Z",
+        "changedBy": "seed"
+      },
+      {
+        "station": 5,
+        "changedAt": "2026-06-05T12:00:00.000Z",
+        "changedBy": "seed"
+      }
     ]
   }
 ]

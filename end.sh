@@ -49,7 +49,13 @@ fi
 git add "${STAGE[@]}"
 
 # Single combined commit so the timestamp matches the recording window.
-git commit -m "Interview session: signed release + terminal recording + agent log" \
+if [ -f "$LOG_PATH" ]; then
+    COMMIT_MSG="Interview session: signed release + terminal recording + agent log"
+else
+    COMMIT_MSG="Interview session: signed release + terminal recording"
+fi
+
+git commit -m "$COMMIT_MSG" \
     --no-verify
 
 echo "✓ Committed. Push instructions:"

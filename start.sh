@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # Interview kit: start.sh
-# Checks the privacy gate, verifies the Claude Code hooks are wired, and
-# begins terminal recording with asciinema. Run this BEFORE you start the
-# interview project.
+# Checks the privacy gate, reports optional agent hook configs, and begins
+# terminal recording with asciinema. Run this BEFORE you start the interview.
 #
 # Environment overrides (for testing or non-standard installs):
 #   ASCIINEMA_BIN   path to the asciinema binary (default: asciinema)
@@ -37,27 +36,32 @@ EOF
     exit 1
 fi
 
-# Verify the Claude Code hooks are wired so the interview.log can be produced.
-HOOKS_FILE="$REPO_ROOT/.claude/settings.json"
-if [ ! -f "$HOOKS_FILE" ]; then
-    echo "✖ Missing $HOOKS_FILE — kit is incomplete. Re-clone the project." >&2
-    exit 1
-fi
-if ! grep -q '"UserPromptSubmit"' "$HOOKS_FILE"; then
-    echo "✖ $HOOKS_FILE does not declare a UserPromptSubmit hook. Kit is incomplete." >&2
-    exit 1
-fi
-if ! grep -q '"PreToolUse"' "$HOOKS_FILE"; then
-    echo "✖ $HOOKS_FILE does not declare a PreToolUse hook. Kit is incomplete." >&2
-    exit 1
-fi
+report_optional_hooks() {
+    local found=0
+    echo "Optional agent hook configs (for structured interview.log enrichment):"
+    for hook_file in \
+        "$REPO_ROOT/.claude/settings.json" \
+        "$REPO_ROOT/.cursor/hooks.json" \
+        "$REPO_ROOT/.codex/hooks.json"
+    do
+        if [ -f "$hook_file" ]; then
+            echo "  ✓ $hook_file"
+            found=1
+        fi
+    done
+    if [ "$found" -eq 0 ]; then
+        echo "  (none found — terminal recording still works)"
+    else
+        echo "  If your AI tool supports project hooks, these may append to interview.log."
+        echo "  Codex users may need to trust project hooks via /hooks before they run."
+    fi
+}
 
 if [ "${SKIP_RECORD:-0}" = "1" ]; then
-    # We still write started-at in this path since there's no preflight
-    # that could fail after this point.
     mkdir -p "$REPO_ROOT/.interview-state"
     date -u +%FT%TZ > "$REPO_ROOT/.interview-state/started-at"
     echo "✓ Privacy gate passed. SKIP_RECORD=1 — not starting asciinema."
+    report_optional_hooks
     exit 0
 fi
 
@@ -76,14 +80,12 @@ EOF
     exit 1
 fi
 
-# Mark "started" only after asciinema preflight passes. Writing it earlier
-# would leave a stale marker behind if preflight failed, and end.sh would
-# then mistakenly think a session was completed.
 mkdir -p "$REPO_ROOT/.interview-state"
 date -u +%FT%TZ > "$REPO_ROOT/.interview-state/started-at"
 
 CAST_PATH="$REPO_ROOT/terminal.cast"
 echo "✓ Privacy gate passed."
+report_optional_hooks
 echo "  Starting terminal recording: $CAST_PATH"
 echo "  When you finish, exit this shell, then run ./end.sh"
 exec "$ASCIINEMA_BIN" rec --overwrite "$CAST_PATH"

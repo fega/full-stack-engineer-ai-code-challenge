@@ -1,0 +1,30 @@
+# .NET build outputs
+bin/
+obj/
+
+# Node / Vite outputs
+node_modules/
+dist/
+.vite/
+
+# Test and coverage outputs
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Local interview runtime state
+.interview-state/
+
+# Local machine/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.user
+*.suo
+
+# Local secrets/config overrides
+.env
+.env.*
+!.env.example
