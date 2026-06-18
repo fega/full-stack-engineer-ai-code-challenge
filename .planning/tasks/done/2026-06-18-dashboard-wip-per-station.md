@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Dashboard shows WIP per station
-status: in-progress
+status: done
 area: ui
 ---
 
@@ -63,13 +63,13 @@ First pass (minimal — shipped in PR #1):
 - [x] Light UI polish so counts are legible (labels + numbers); keep scope tight.
 
 Second pass (expanded scope — full UI per the paragraph above):
-- [ ] Add `GET /api/spools` returning per-spool summaries (number, package, due
+- [x] Add `GET /api/spools` returning per-spool summaries (number, package, due
       date, current station, past-due flag) so the detail table can be populated.
-- [ ] Introduce client-side routing (`vue-router`): `/` summary + `/wip` detail.
-- [ ] Summary view at `/` with a button that navigates to the WIP detail page.
-- [ ] WIP detail page `/wip`: click any station category to see a table of the
+- [x] Introduce client-side routing (`vue-router`): `/` summary + `/wip` detail.
+- [x] Summary view at `/` with a button that navigates to the WIP detail page.
+- [x] WIP detail page `/wip`: click any station category to see a table of the
       spools currently in that state.
-- [ ] Polish the UI into a clean, legible dashboard.
+- [x] Polish the UI into a clean, legible dashboard.
 
 ## Expected output
 
@@ -149,7 +149,48 @@ yields six zero counts. `dotnet test` → 5 passed (2 pre-existing + 3 new).
 **Verified**: `GET /api/dashboard` against seed data returns the ordered array with
 counts 29/27/23/27/36/58 summing to 200 (total spools). `npm run build` succeeds.
 
-PR: https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/2
+---
+
+## Second pass — full UI (summary view + WIP detail page)
+
+The user expanded the scope: a real two-page dashboard. From the root summary view
+a button navigates to a WIP detail page; on that page clicking any station category
+shows the spools currently in that state in a table.
+
+**Backend** (new read endpoint):
+- `src/StratusFabTracker.Api/Application/SpoolQueryService.cs` — new read-side
+  service returning `SpoolSummaryDto` (Id, SpoolNumber, PackageId, DueDate,
+  CurrentStation, IsPastDue), ordered by spool number. The per-station group sizes
+  equal the dashboard's per-station counts. `IsPastDue` mirrors the dashboard rule
+  (overdue and not yet Installed).
+- `Program.cs` — registered `SpoolQueryService` and exposed `GET /api/spools`.
+- Tests: `src/StratusFabTracker.Tests/SpoolQueryServiceTests.cs` — 3 tests pin
+  station grouping, spool-number ordering, and the past-due rule (Installed never
+  flagged). `dotnet test` → **8 passed** (2 starter + 3 dashboard + 3 spool query).
+
+**Frontend** (`src/stratus-fab-tracker-web/`):
+- Added `vue-router`; `main.ts` mounts with the router and a global `style.css`.
+- `src/api.ts` — shared types, `STATION_ORDER`/`TERMINAL_STATION` constants, and
+  typed fetch helpers (`/api/dashboard`, `/api/throughput`, `/api/spools`).
+- `src/router.ts` — `/` → `SummaryView`, `/wip` → `WipDetailView`.
+- `src/App.vue` — slim shell: header + nav + `<RouterView>`.
+- `src/views/SummaryView.vue` — overview: WIP-in-progress / Installed / Past-due
+  stats, in-flight station tiles (each links into the detail page), throughput
+  summary, and a prominent **"View WIP detail →"** button.
+- `src/views/WipDetailView.vue` — all six stations as clickable category tiles in
+  domain order (Installed tagged "Complete"); the selected station is held in the
+  URL (`/wip?station=Weld`) so it is linkable and back-button friendly, and its
+  spools render in a table (Spool / Package / Due date / Status badge).
+
+**Verified end to end**: ran the API + Vite dev server and captured headless-Chrome
+screenshots of both pages. `/api/spools` returns 200 spools whose per-station
+grouping (29/27/23/27/36/58) matches `/api/dashboard` exactly. `npm run build` and
+`dotnet test` both pass.
+
+First-pass PR (merged): https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/2
+Second-pass PR (this work): https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/3
+(branch `feat/dashboard-wip-per-station`; PR #2 was already merged, so the
+second-pass commits are a fresh PR on top of `main`.)
 
 
 # FOLLOW UP

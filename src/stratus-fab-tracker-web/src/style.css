@@ -1,0 +1,163 @@
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --border: #e2e5ea;
+  --ink: #1d2330;
+  --ink-soft: #5b6472;
+  --accent: #2f6fed;
+  --accent-soft: #eaf1fe;
+  --danger: #c0392b;
+  --danger-soft: #fdecea;
+  --ok: #1e8e5a;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(20, 30, 50, 0.06), 0 4px 12px rgba(20, 30, 50, 0.05);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+.app-shell {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px 24px 64px;
+}
+
+.app-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-header h1 {
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.app-nav { display: flex; gap: 4px; }
+
+.app-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--ink-soft);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+.app-nav a.router-link-active { color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+
+.section-title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.card + .card { margin-top: 20px; }
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+/* Station tiles */
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  cursor: pointer;
+  font: inherit;
+  transition: border-color 0.12s, box-shadow 0.12s, transform 0.06s;
+}
+.tile:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+.tile:active { transform: translateY(1px); }
+.tile.is-active { border-color: var(--accent); background: var(--accent-soft); box-shadow: var(--shadow); }
+.tile.is-terminal { opacity: 0.92; }
+.tile .tile-count { font-size: 28px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.tile .tile-label { font-size: 13px; color: var(--ink-soft); }
+.tile .tile-tag { font-size: 11px; font-weight: 600; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* Stat rows */
+.stat-row { display: flex; flex-wrap: wrap; gap: 28px; }
+.stat { display: flex; flex-direction: column; gap: 2px; }
+.stat .stat-value { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat .stat-label { font-size: 12px; color: var(--ink-soft); }
+.stat .stat-value.danger { color: var(--danger); }
+.stat .stat-value.ok { color: var(--ok); }
+
+/* Table */
+.table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.table th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  font-weight: 600;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+.table td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: #fafbfc; }
+.table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.badge.danger { background: var(--danger-soft); color: var(--danger); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  cursor: pointer;
+}
+.btn:hover { background: #2860d6; }
+
+.muted { color: var(--ink-soft); font-size: 14px; }
+.error { color: var(--danger); }
