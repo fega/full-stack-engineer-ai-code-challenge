@@ -37,11 +37,14 @@ public class SpoolWorkflowServiceTests
         await service.AdvanceAsync("S1");
 
         var spool = await repo.GetByIdAsync("S1");
-        var latest = spool!.StatusHistory.OrderByDescending(e => e.ChangedAt).First();
-        Assert.Equal(Station.Weld, latest.Station);
-        Assert.Equal(Now, latest.ChangedAt);
-        Assert.Equal("system", latest.ChangedBy);
+        // Assert via the public surface clients use, not by re-deriving "latest".
+        Assert.Equal(Station.Weld, spool!.CurrentStation);
         Assert.Equal(2, spool.StatusHistory.Count); // original + appended, history is preserved
+
+        // The appended event carries the clock time and the system actor.
+        var appended = Assert.Single(spool.StatusHistory, e => e.Station == Station.Weld);
+        Assert.Equal(Now, appended.ChangedAt);
+        Assert.Equal("system", appended.ChangedBy);
     }
 
     [Theory]

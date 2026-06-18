@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using StratusFabTracker.Api.Application;
 using StratusFabTracker.Api.Domain;
 using StratusFabTracker.Api.Infrastructure;
@@ -8,6 +9,11 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
+
+// Serialize Station (and other enums) as their names everywhere so every route
+// agrees on the wire representation (e.g. "Cut" rather than 1).
+builder.Services.ConfigureHttpJsonOptions(options =>
+    options.SerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
 builder.Services.AddSingleton<IClock, SystemClock>();
 builder.Services.AddSingleton<ISpoolRepository, InMemorySpoolRepository>();
@@ -31,11 +37,11 @@ app.MapGet("/api/spools/{id}", async (string id, ISpoolRepository repo) =>
 app.MapPost("/api/spools/{id}/advance", async (string id, SpoolWorkflowService service) =>
 {
     var outcome = await service.AdvanceAsync(id);
-    return outcome.Result switch
+    return outcome switch
     {
-        TransitionResult.NotFound => Results.NotFound(new { message = "Spool not found" }),
-        TransitionResult.InvalidTransition => Results.BadRequest(new { message = "Spool cannot move backward or beyond Installed" }),
-        TransitionResult.Success => Results.Ok(new { id, currentStation = outcome.NewStation!.Value.ToString() }),
+        { Result: TransitionResult.NotFound } => Results.NotFound(new { message = "Spool not found" }),
+        { Result: TransitionResult.InvalidTransition } => Results.BadRequest(new { message = "Spool cannot move backward or beyond Installed" }),
+        { Result: TransitionResult.Success, NewStation: { } station } => Results.Ok(new { id, currentStation = station }),
         _ => Results.StatusCode(500)
     };
 });
