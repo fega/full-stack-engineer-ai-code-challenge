@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Dashboard shows WIP per station
-status: todo
+status: in-progress
 area: ui
 ---
 
@@ -24,7 +24,7 @@ area: ui
     ```
   - Make the playbook state-move commit (above) on this branch.
   - Keep the worktree path noted here so the next session can find it:
-    `worktree:` ____  ·  `branch:` ____
+    `worktree:` ../wt-dashboard-wip-per-station  ·  `branch:` feat/dashboard-wip-per-station
 
 ## Context
 
