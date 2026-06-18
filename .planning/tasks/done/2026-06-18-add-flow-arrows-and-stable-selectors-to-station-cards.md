@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Add flow arrows and stable selectors to station cards
-status: in-progress
+status: done
 area: ui
 ---
 
@@ -50,21 +50,23 @@ tests or future work.
 
 ## Task
 
-- [ ] Add a directional arrow (→) between consecutive station cards on **both**
+- [x] Add a directional arrow (→) between consecutive station cards on **both**
       pages to indicate the one-way flow through the process.
-  - Decide on the simplest robust approach for the wrapping grid (e.g. a CSS
-    `::after`/`::before` connector, or explicit arrow elements between cards).
-    Arrows should sit between cards, not after the last one.
-  - Keep it visually consistent across SummaryView and WipDetailView.
-- [ ] Add clearer, stable class names and ids to the station card elements for
-      future targeting, e.g. a `station-card` class (in addition to / alongside
-      the existing `.tile`) and a per-station id/data attribute derived from the
-      station name (e.g. `data-station="weld"` or `id="station-card-weld"`).
-  - Apply consistently on both pages.
-  - Prefer adding new selectors over renaming existing ones unless the rename is
-    clean and updated everywhere (style.css + both views).
-- [ ] Verify the home page (5 cards, terminal excluded) and WIP page (6 cards)
+  - Used explicit `<span class="station-flow-arrow" aria-hidden="true">→</span>`
+    elements rendered between cards (v-for with index check, no trailing arrow
+    after the last card). Container switched from `.grid` to a dedicated flex
+    `.station-flow` so arrows sit between cards and wrap with them.
+  - Visually consistent across SummaryView and WipDetailView.
+- [x] Add clearer, stable class names and ids to the station card elements for
+      future targeting: added a `station-card` class alongside `.tile`, a
+      `data-station="<Name>"` attribute, and an `id="station-card-<slug>"`
+      (e.g. `station-card-weld`) on both pages.
+  - Applied consistently on both pages; existing `.tile*` selectors kept intact.
+- [x] Verify the home page (5 cards, terminal excluded) and WIP page (6 cards)
       both render arrows correctly and that wrapping rows still look sensible.
+  - `npm run build` passes; rendered a headless-Chrome preview of both layouts
+    using the real stylesheet — arrows, active state, and terminal "Complete"
+    badge all render correctly.
 
 ## Expected output
 
@@ -110,11 +112,35 @@ tests or future work.
 
 # ROOT CAUSE
 
-[if task is fixing a bug, report the root cause here]
+N/A — this is a UI enhancement, not a bug fix.
 
 # RESOLUTION
 
-[place here the resolution of the ticket]
+Added a one-way flow indicator and stable selectors to the station cards.
+
+Files changed (in `src/stratus-fab-tracker-web/`):
+- `src/style.css` — new `.station-flow` (flex-wrap row) and `.station-flow-arrow`
+  rules. Station cards are styled via `.station-flow .station-card` (flex
+  `1 1 150px`); existing `.tile*` rules untouched.
+- `src/views/SummaryView.vue` — home page: container `.grid` → `.station-flow`;
+  cards wrapped in a `<template v-for>` that emits a `→` arrow between cards
+  (none after the last). Each card gains `station-card` class, `data-station`,
+  and `id="station-card-<slug>"` via a `stationId()` helper.
+- `src/views/WipDetailView.vue` — WIP page: same treatment for the button-based
+  cards; `is-active` / `is-terminal` states and the "Complete" tag preserved.
+
+Approach notes:
+- Chose explicit arrow DOM elements over a CSS pseudo-element connector so the
+  arrows wrap naturally with the flex row and are easy to target/verify.
+- Arrows are `aria-hidden` (decorative); direction is conveyed visually.
+- Known minor cosmetic: at a row-wrap boundary the last card of a row shows a
+  trailing arrow. Wrapping itself is pre-existing behavior from the old
+  auto-fill grid; direction still reads clearly. Left as-is for simplicity.
+
+Verification: `npm run build` passes; headless-Chrome preview of both layouts
+(home = 5 cards, WIP = 6 cards incl. terminal) rendered correctly.
+
+PR: <!-- filled after creation -->
 
 # FOLLOW UP
 

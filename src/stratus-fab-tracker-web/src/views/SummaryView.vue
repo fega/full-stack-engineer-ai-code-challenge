@@ -21,6 +21,10 @@ const installedCount = computed(() =>
 );
 const wipTotal = computed(() => inFlight.value.reduce((sum, s) => sum + s.count, 0));
 
+// Stable, station-derived id so individual station cards can be targeted later.
+const stationId = (station: string) =>
+  `station-card-${station.toLowerCase().replace(/\s+/g, '-')}`;
+
 onMounted(async () => {
   try {
     const [d, t] = await Promise.all([api.dashboard(), api.throughput()]);
@@ -59,16 +63,24 @@ onMounted(async () => {
         </div>
       </div>
 
-      <div class="grid">
-        <RouterLink
-          v-for="s in inFlight"
-          :key="s.station"
-          class="tile"
-          :to="{ path: '/wip', query: { station: s.station } }"
-        >
-          <span class="tile-count">{{ s.count }}</span>
-          <span class="tile-label">{{ s.station }}</span>
-        </RouterLink>
+      <!-- One-way station flow: arrows between cards show the process direction. -->
+      <div class="station-flow">
+        <template v-for="(s, i) in inFlight" :key="s.station">
+          <RouterLink
+            :id="stationId(s.station)"
+            class="tile station-card"
+            :data-station="s.station"
+            :to="{ path: '/wip', query: { station: s.station } }"
+          >
+            <span class="tile-count">{{ s.count }}</span>
+            <span class="tile-label">{{ s.station }}</span>
+          </RouterLink>
+          <span
+            v-if="i < inFlight.length - 1"
+            class="station-flow-arrow"
+            aria-hidden="true"
+          >→</span>
+        </template>
       </div>
     </div>
 
