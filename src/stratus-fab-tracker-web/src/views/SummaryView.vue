@@ -3,6 +3,7 @@ import { computed, onMounted, ref } from 'vue';
 import { RouterLink } from 'vue-router';
 import {
   api,
+  stationCardId,
   TERMINAL_STATION,
   type DashboardDto,
   type ThroughputDto,
@@ -20,10 +21,6 @@ const installedCount = computed(() =>
   dashboard.value?.wipByStation.find(s => s.station === TERMINAL_STATION)?.count ?? 0
 );
 const wipTotal = computed(() => inFlight.value.reduce((sum, s) => sum + s.count, 0));
-
-// Stable, station-derived id so individual station cards can be targeted later.
-const stationId = (station: string) =>
-  `station-card-${station.toLowerCase().replace(/\s+/g, '-')}`;
 
 onMounted(async () => {
   try {
@@ -67,7 +64,7 @@ onMounted(async () => {
       <div class="station-flow">
         <template v-for="(s, i) in inFlight" :key="s.station">
           <RouterLink
-            :id="stationId(s.station)"
+            :id="stationCardId(s.station)"
             class="tile station-card"
             :data-station="s.station"
             :to="{ path: '/wip', query: { station: s.station } }"

@@ -3,6 +3,7 @@ import { computed, onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import {
   api,
+  stationCardId,
   STATION_ORDER,
   TERMINAL_STATION,
   type SpoolSummaryDto,
@@ -42,10 +43,6 @@ function select(station: string) {
   router.replace({ path: '/wip', query: { station } });
 }
 
-// Stable, station-derived id so individual station cards can be targeted later.
-const stationId = (station: string) =>
-  `station-card-${station.toLowerCase().replace(/\s+/g, '-')}`;
-
 const dateFmt = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
   month: 'short',
@@ -80,7 +77,7 @@ onMounted(async () => {
     <div class="station-flow" style="margin-bottom:24px;">
       <template v-for="(s, i) in stations" :key="s.station">
         <button
-          :id="stationId(s.station)"
+          :id="stationCardId(s.station)"
           class="tile station-card"
           :class="{ 'is-active': s.station === selected, 'is-terminal': s.station === TERMINAL_STATION }"
           :data-station="s.station"

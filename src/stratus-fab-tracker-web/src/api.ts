@@ -38,6 +38,11 @@ export const STATION_ORDER = [
 // Installed is the terminal station: those spools are complete, not in-flight WIP.
 export const TERMINAL_STATION = 'Installed';
 
+// Stable DOM id for a station card, derived from the station name so individual
+// cards can be targeted in tests or future work (e.g. "station-card-weld").
+export const stationCardId = (station: string) =>
+  `station-card-${station.toLowerCase().replace(/\s+/g, '-')}`;
+
 async function getJson<T>(url: string): Promise<T> {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Request failed: ${res.status}`);
