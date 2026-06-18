@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Reject invalid backward / out-of-range station transitions
-status: todo
+status: in-progress
 area: api
 ---
 
@@ -24,7 +24,7 @@ area: api
     ```
   - Make the playbook state-move commit (above) on this branch.
   - Keep the worktree path noted here so the next session can find it:
-    `worktree:` ____  ·  `branch:` ____
+    `worktree:` ../wt-reject-backward  ·  `branch:` feat/reject-backward
 
 ## Context
 
