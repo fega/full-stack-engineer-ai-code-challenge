@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Dashboard shows WIP per station
-status: done
+status: in-progress
 area: ui
 ---
 
@@ -46,7 +46,13 @@ be presented separately, and zero-count stations being shown.
 
 ## Task
 
+your task is to implement a great UI for this feature, you will have a summary
+view in the root path but clicking on a button will send you to the Detail WIP
+per station page, where you can click any category and see the list of spools
+that are in that state in a table
+
 <!-- What to do. Use sub-headings or a checklist for multi-step work. -->
+First pass (minimal — shipped in PR #1):
 - [x] Verify `WipByStation` counts every spool exactly once and includes all six
       stations (including zero counts).
 - [x] Ensure the UI displays stations in domain order, not arbitrary dict order.
@@ -55,6 +61,15 @@ be presented separately, and zero-count stations being shown.
 - [x] Add backend test(s) in `src/StratusFabTracker.Tests` asserting WIP counts
       for a known seeded/constructed set of spools.
 - [x] Light UI polish so counts are legible (labels + numbers); keep scope tight.
+
+Second pass (expanded scope — full UI per the paragraph above):
+- [ ] Add `GET /api/spools` returning per-spool summaries (number, package, due
+      date, current station, past-due flag) so the detail table can be populated.
+- [ ] Introduce client-side routing (`vue-router`): `/` summary + `/wip` detail.
+- [ ] Summary view at `/` with a button that navigates to the WIP detail page.
+- [ ] WIP detail page `/wip`: click any station category to see a table of the
+      spools currently in that state.
+- [ ] Polish the UI into a clean, legible dashboard.
 
 ## Expected output
 
