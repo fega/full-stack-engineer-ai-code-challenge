@@ -3,6 +3,7 @@ import { computed, onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import {
   api,
+  stationCardId,
   STATION_ORDER,
   TERMINAL_STATION,
   type SpoolSummaryDto,
@@ -72,19 +73,27 @@ onMounted(async () => {
   <section v-else>
     <h2 class="section-title">WIP per station — pick a station to see its spools</h2>
 
-    <div class="grid" style="margin-bottom:24px;">
-      <button
-        v-for="s in stations"
-        :key="s.station"
-        class="tile"
-        :class="{ 'is-active': s.station === selected, 'is-terminal': s.station === TERMINAL_STATION }"
-        type="button"
-        @click="select(s.station)"
-      >
-        <span class="tile-count">{{ s.count }}</span>
-        <span class="tile-label">{{ s.station }}</span>
-        <span v-if="s.station === TERMINAL_STATION" class="tile-tag">Complete</span>
-      </button>
+    <!-- One-way station flow: arrows between cards show the process direction. -->
+    <div class="station-flow" style="margin-bottom:24px;">
+      <template v-for="(s, i) in stations" :key="s.station">
+        <button
+          :id="stationCardId(s.station)"
+          class="tile station-card"
+          :class="{ 'is-active': s.station === selected, 'is-terminal': s.station === TERMINAL_STATION }"
+          :data-station="s.station"
+          type="button"
+          @click="select(s.station)"
+        >
+          <span class="tile-count">{{ s.count }}</span>
+          <span class="tile-label">{{ s.station }}</span>
+          <span v-if="s.station === TERMINAL_STATION" class="tile-tag">Complete</span>
+        </button>
+        <span
+          v-if="i < stations.length - 1"
+          class="station-flow-arrow"
+          aria-hidden="true"
+        >→</span>
+      </template>
     </div>
 
     <div class="card">

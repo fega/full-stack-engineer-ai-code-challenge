@@ -3,6 +3,7 @@ import { computed, onMounted, ref } from 'vue';
 import { RouterLink } from 'vue-router';
 import {
   api,
+  stationCardId,
   TERMINAL_STATION,
   type DashboardDto,
   type ThroughputDto,
@@ -59,16 +60,24 @@ onMounted(async () => {
         </div>
       </div>
 
-      <div class="grid">
-        <RouterLink
-          v-for="s in inFlight"
-          :key="s.station"
-          class="tile"
-          :to="{ path: '/wip', query: { station: s.station } }"
-        >
-          <span class="tile-count">{{ s.count }}</span>
-          <span class="tile-label">{{ s.station }}</span>
-        </RouterLink>
+      <!-- One-way station flow: arrows between cards show the process direction. -->
+      <div class="station-flow">
+        <template v-for="(s, i) in inFlight" :key="s.station">
+          <RouterLink
+            :id="stationCardId(s.station)"
+            class="tile station-card"
+            :data-station="s.station"
+            :to="{ path: '/wip', query: { station: s.station } }"
+          >
+            <span class="tile-count">{{ s.count }}</span>
+            <span class="tile-label">{{ s.station }}</span>
+          </RouterLink>
+          <span
+            v-if="i < inFlight.length - 1"
+            class="station-flow-arrow"
+            aria-hidden="true"
+          >→</span>
+        </template>
       </div>
     </div>
 

@@ -83,6 +83,33 @@ a { color: inherit; }
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
+/* Station flow: single-line row of station cards with one-way arrows between
+   them. Flex (not grid) so the arrow separators sit between the cards. The
+   whole chain stays on one line — cards share the width equally and shrink to
+   fit; on narrow screens the row scrolls horizontally instead of wrapping, so
+   the one-way process never breaks across lines. */
+.station-flow {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: 16px;
+  overflow-x: auto;
+}
+.station-flow .station-card {
+  flex: 1 1 0;
+  min-width: 100px;
+}
+.station-flow-arrow {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--ink-soft);
+  user-select: none;
+}
+
 /* Station tiles */
 .tile {
   display: flex;
