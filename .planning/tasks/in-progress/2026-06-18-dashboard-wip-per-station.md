@@ -149,7 +149,7 @@ yields six zero counts. `dotnet test` → 5 passed (2 pre-existing + 3 new).
 **Verified**: `GET /api/dashboard` against seed data returns the ordered array with
 counts 29/27/23/27/36/58 summing to 200 (total spools). `npm run build` succeeds.
 
-PR: https://github.com/GTP-Services/full-stack-engineer-ai-code-challenge/pull/1
+PR: https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/2
 
 
 # FOLLOW UP
