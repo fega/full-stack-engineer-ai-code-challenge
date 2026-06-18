@@ -150,7 +150,7 @@ that to `400 BadRequest` with message
 
 `dotnet test`: **30 passed, 0 failed.**
 
-PR: _pending_ (recorded below after `gh pr create`).
+PR: https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/5
 
 # FOLLOW UP
 
