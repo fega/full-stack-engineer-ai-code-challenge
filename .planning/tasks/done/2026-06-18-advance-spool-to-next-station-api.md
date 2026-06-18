@@ -142,7 +142,7 @@ forward-only guard is the sibling `reject-invalid-backward-transitions` playbook
 - New test doubles in `TestDoubles.cs`; added `Microsoft.AspNetCore.Mvc.Testing`
   to the test project.
 
-PR: <!-- filled after `gh pr create` -->
+PR: https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/1
 
 # FOLLOW UP
 
