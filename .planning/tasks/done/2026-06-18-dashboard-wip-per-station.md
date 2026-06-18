@@ -42,7 +42,7 @@ and polish):
 
 Things to scrutinize: station ordering in the UI (the dict may not preserve the
 domain order `Detailing→…→Installed`), whether `Installed` should count as WIP or
-be presented separately, and zero-count stations being shown.
+be presented separately, and zero-count stations being shown.   
 
 ## Task
 
