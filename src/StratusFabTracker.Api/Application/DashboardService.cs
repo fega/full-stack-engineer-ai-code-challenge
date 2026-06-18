@@ -11,14 +11,22 @@ public sealed class DashboardService
     public async Task<DashboardDto> GetDashboardAsync()
     {
         var spools = await _repository.GetAllAsync();
-        var byStation = Enum.GetValues<Station>()
-            .ToDictionary(s => s.ToString(), s => spools.Count(x => x.CurrentStation == s));
+
+        // Emit every station in domain order (Detailing -> ... -> Installed),
+        // including zero-count stations. Each spool has exactly one CurrentStation,
+        // so these counts partition the spool set and sum to the total.
+        var wipByStation = Enum.GetValues<Station>()
+            .OrderBy(s => (int)s)
+            .Select(s => new WipStationCount(s.ToString(), spools.Count(x => x.CurrentStation == s)))
+            .ToList();
 
         var now = DateOnly.FromDateTime(DateTime.UtcNow);
         var pastDue = spools.Count(x => x.DueDate < now && x.CurrentStation != Station.Installed);
 
-        return new DashboardDto(byStation, pastDue);
+        return new DashboardDto(wipByStation, pastDue);
     }
 }
 
-public sealed record DashboardDto(Dictionary<string, int> WipByStation, int PastDueCount);
+public sealed record WipStationCount(string Station, int Count);
+
+public sealed record DashboardDto(IReadOnlyList<WipStationCount> WipByStation, int PastDueCount);

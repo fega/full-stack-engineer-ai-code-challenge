@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 
+type WipStationCount = { station: string; count: number };
 type DashboardDto = {
-  wipByStation: Record<string, number>;
+  wipByStation: WipStationCount[];
   pastDueCount: number;
 };
 
@@ -17,6 +18,18 @@ type ThroughputDto = {
 const dashboard = ref<DashboardDto | null>(null);
 const throughput = ref<ThroughputDto | null>(null);
 const error = ref('');
+
+// Installed is the terminal station: those spools are no longer work-in-progress,
+// so they are shown separately from the in-flight stations (Detailing -> Shipped).
+const inFlightStations = computed(() =>
+  dashboard.value?.wipByStation.filter(s => s.station !== 'Installed') ?? []
+);
+const installedCount = computed(() =>
+  dashboard.value?.wipByStation.find(s => s.station === 'Installed')?.count ?? 0
+);
+const wipTotal = computed(() =>
+  inFlightStations.value.reduce((sum, s) => sum + s.count, 0)
+);
 
 async function load() {
   try {
@@ -41,11 +54,21 @@ onMounted(load);
 
     <section v-if="dashboard">
       <h2>WIP per station</h2>
-      <ul>
-        <li v-for="(count, station) in dashboard.wipByStation" :key="station">
-          {{ station }}: {{ count }}
-        </li>
-      </ul>
+      <table style="border-collapse: collapse; min-width: 280px;">
+        <tbody>
+          <tr v-for="s in inFlightStations" :key="s.station">
+            <td style="padding: 4px 16px 4px 0;">{{ s.station }}</td>
+            <td style="padding: 4px 0; text-align: right; font-variant-numeric: tabular-nums;">{{ s.count }}</td>
+          </tr>
+          <tr style="border-top: 1px solid #ccc; font-weight: bold;">
+            <td style="padding: 4px 16px 4px 0;">In progress</td>
+            <td style="padding: 4px 0; text-align: right; font-variant-numeric: tabular-nums;">{{ wipTotal }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 12px;">
+        <strong>Installed (complete):</strong> {{ installedCount }}
+      </p>
       <p><strong>Past due:</strong> {{ dashboard.pastDueCount }}</p>
     </section>
 
