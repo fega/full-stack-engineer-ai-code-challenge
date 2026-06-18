@@ -140,7 +140,7 @@ Approach notes:
 Verification: `npm run build` passes; headless-Chrome preview of both layouts
 (home = 5 cards, WIP = 6 cards incl. terminal) rendered correctly.
 
-PR: <!-- filled after creation -->
+PR: https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/4
 
 # FOLLOW UP
 
