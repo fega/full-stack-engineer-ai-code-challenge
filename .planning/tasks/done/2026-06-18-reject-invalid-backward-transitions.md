@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Reject invalid backward / out-of-range station transitions
-status: in-progress
+status: done
 area: api
 ---
 
@@ -104,11 +104,53 @@ explicit guard).
 
 # ROOT CAUSE
 
-[if task is fixing a bug, report the root cause here]
+Not a defect. The forward-only rule was already enforced — `SpoolWorkflowService`
+advances solely via `Station.Next()`, and advancing a spool at `Installed`
+returns `InvalidTransition → 400`. The gap was that the rule was neither
+explicitly documented as a contract decision nor fully pinned by tests: the
+domain edge map (`StationExtensions.Next`) only had two of its six edges under
+test, and the "no backward / no skip-ahead" guarantees were never asserted.
 
 # RESOLUTION
 
-[place here the resolution of the ticket]
+## Transition contract decision: advance-only (`Next()`)
+
+Kept the **advance-only** contract; did **not** add a `move-to-{station}` API.
+
+Rationale: the sole mutation path is "advance one step" via
+`SpoolWorkflowService.AdvanceAsync`, which only ever applies
+`CurrentStation.Next()`. Backward moves and skip-ahead moves are therefore not
+*expressible* — there is no input that could request them. Introducing a
+target-station API would create that risk for no current product need and would
+require a new explicit guard. The forward edge
+`Detailing → Cut → Weld → QC → Shipped → Installed` lives in exactly one place,
+`StationExtensions.Next()` (`src/StratusFabTracker.Api/Domain/Station.cs`), and is
+not duplicated.
+
+Advancing a spool already at `Installed` is rejected: `Next()` returns `null`,
+the service returns `TransitionResult.InvalidTransition`, and `Program.cs` maps
+that to `400 BadRequest` with message
+`"Spool cannot move backward or beyond Installed"`.
+
+## Coverage added
+
+- `StationTests` (`src/StratusFabTracker.Tests/StationTests.cs`) rewritten to pin
+  the legal-edge rule at its single source of truth:
+  - full forward map — all five non-terminal edges;
+  - `Installed` is terminal (`Next()` is null → cannot move beyond Installed);
+  - an ordinal invariant proving every non-terminal `Next()` is exactly `+1`,
+    which rules out both backward moves and skip-ahead in one assertion (this is
+    where the otherwise-inexpressible "no backward / no skip" requirements are
+    guaranteed).
+- Pre-existing coverage already pins the rest and was confirmed:
+  `SpoolWorkflowServiceTests` (advance-at-`Installed` rejected, `StatusHistory`
+  unchanged, `UpdateCount == 0`; every forward hop; full-chain walk; NotFound)
+  and `AdvanceEndpointTests` (200 advance, 404 unknown, 400 past-Installed over
+  the real HTTP route).
+
+`dotnet test`: **30 passed, 0 failed.**
+
+PR: _pending_ (recorded below after `gh pr create`).
 
 # FOLLOW UP
 
