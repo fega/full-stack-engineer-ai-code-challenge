@@ -39,8 +39,8 @@ score — and carries its own biases, so its output is treated as one input
 among many. The hiring decision is made by humans, who have final say.
 ## Signed
 
-(placeholder — candidate signs here)
+Fabian Enrique Gutierrez
 
 ## Date
 
-(placeholder — candidate dates here, YYYY-MM-DD)
+2026-06-18
