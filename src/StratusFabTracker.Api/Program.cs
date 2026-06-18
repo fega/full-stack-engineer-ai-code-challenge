@@ -30,12 +30,12 @@ app.MapGet("/api/spools/{id}", async (string id, ISpoolRepository repo) =>
 
 app.MapPost("/api/spools/{id}/advance", async (string id, SpoolWorkflowService service) =>
 {
-    var result = await service.AdvanceAsync(id);
-    return result switch
+    var outcome = await service.AdvanceAsync(id);
+    return outcome.Result switch
     {
         TransitionResult.NotFound => Results.NotFound(new { message = "Spool not found" }),
         TransitionResult.InvalidTransition => Results.BadRequest(new { message = "Spool cannot move backward or beyond Installed" }),
-        TransitionResult.Success => Results.NoContent(),
+        TransitionResult.Success => Results.Ok(new { id, currentStation = outcome.NewStation!.Value.ToString() }),
         _ => Results.StatusCode(500)
     };
 });

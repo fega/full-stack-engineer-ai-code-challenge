@@ -9,6 +9,12 @@ public enum TransitionResult
     InvalidTransition
 }
 
+/// <summary>
+/// Outcome of an advance attempt. <see cref="NewStation"/> is the station the spool
+/// moved to on success, and null otherwise.
+/// </summary>
+public sealed record AdvanceOutcome(TransitionResult Result, Station? NewStation = null);
+
 public sealed class SpoolWorkflowService
 {
     private readonly ISpoolRepository _repository;
@@ -20,16 +26,16 @@ public sealed class SpoolWorkflowService
         _clock = clock;
     }
 
-    public async Task<TransitionResult> AdvanceAsync(string spoolId)
+    public async Task<AdvanceOutcome> AdvanceAsync(string spoolId)
     {
         var spool = await _repository.GetByIdAsync(spoolId);
-        if (spool is null) return TransitionResult.NotFound;
+        if (spool is null) return new AdvanceOutcome(TransitionResult.NotFound);
 
         var next = spool.CurrentStation.Next();
-        if (next is null) return TransitionResult.InvalidTransition;
+        if (next is null) return new AdvanceOutcome(TransitionResult.InvalidTransition);
 
         spool.StatusHistory.Add(new StatusEvent(next.Value, _clock.UtcNow, "system"));
         await _repository.UpdateAsync(spool);
-        return TransitionResult.Success;
+        return new AdvanceOutcome(TransitionResult.Success, next.Value);
     }
 }
