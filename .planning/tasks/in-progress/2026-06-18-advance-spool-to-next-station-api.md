@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Advance a spool to its next station via the API
-status: todo
+status: in-progress
 area: api
 ---
 
@@ -24,7 +24,7 @@ area: api
     ```
   - Make the playbook state-move commit (above) on this branch.
   - Keep the worktree path noted here so the next session can find it:
-    `worktree:` ____  ·  `branch:` ____
+    `worktree:` ../wt-advance-spool-to-next-station-api  ·  `branch:` feat/advance-spool-to-next-station-api
 
 ## Context
 
