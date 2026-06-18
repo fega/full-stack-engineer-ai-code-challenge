@@ -160,7 +160,7 @@ Full reasoning + "what I'd do next" in `PROCESS.md`.
   with the new `due` field per day; window `[2026-06-05, today]`.
 - `dotnet test` → 28 passing. `npm run build` (vite) → clean.
 
-PR: <!-- filled after push -->
+PR: https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/6
 
 
 # FOLLOW UP
