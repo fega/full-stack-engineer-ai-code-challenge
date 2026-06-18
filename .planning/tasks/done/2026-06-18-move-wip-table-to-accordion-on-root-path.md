@@ -136,7 +136,7 @@ Changes (`src/stratus-fab-tracker-web/`):
 
 Verification: `npm run build` succeeds (30 modules transformed, no errors).
 
-PR: <!-- filled in below after `gh pr create` -->
+PR: https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/7
 
 # Note on duplication
 
