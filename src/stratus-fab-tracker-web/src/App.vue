@@ -8,7 +8,6 @@ import { RouterLink, RouterView } from 'vue-router';
       <h1>Stratus Fab Tracker</h1>
       <nav class="app-nav">
         <RouterLink to="/">Overview</RouterLink>
-        <RouterLink to="/wip">WIP detail</RouterLink>
       </nav>
     </header>
     <RouterView />

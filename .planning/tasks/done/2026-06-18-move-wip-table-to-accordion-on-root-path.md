@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Move the /wip table to an accordion on the root path
-status: todo
+status: done
 area: ui
 ---
 
@@ -24,7 +24,7 @@ area: ui
     ```
   - Make the playbook state-move commit (above) on this branch.
   - Keep the worktree path noted here so the next session can find it:
-    `worktree:` ____  ·  `branch:` ____
+    `worktree:` ../wt-wip-accordion  ·  `branch:` feat/wip-accordion
 
 ## Context
 
@@ -109,11 +109,39 @@ fully folded into the root accordion — note the decision in RESOLUTION.
 
 # ROOT CAUSE
 
-[if task is fixing a bug, report the root cause here]
+N/A — feature/UX change, not a bug fix.
 
 # RESOLUTION
 
-[place here the resolution of the ticket]
+Folded the standalone `/wip` detail page into the root `/` summary page as a
+collapsible accordion.
+
+Decision on the `/wip` route: **fully folded into root.** `/wip` now redirects to
+`/` preserving the `?station=` query, so existing deep links keep working, and
+`WipDetailView.vue` plus the "WIP detail" nav link were removed.
+
+Changes (`src/stratus-fab-tracker-web/`):
+- `views/SummaryView.vue` — added `?station=`-driven station selection (tiles are
+  now `<button>`s that `router.replace` the query and open the accordion), an
+  accordion wrapping the per-station spool table, and the `formatDue` /
+  `spoolsAtSelected` logic carried over from the old detail view. Now also fetches
+  `api.spools()`. Stable `stationCardId` / `data-station` selectors and the
+  past-due / on-track badges are preserved.
+- `router.ts` — `/wip` → `/` redirect (query-preserving); dropped the
+  `WipDetailView` route/import.
+- `App.vue` — removed the redundant "WIP detail" nav link.
+- `style.css` — added `.accordion` / `.accordion-header` / `.accordion-chevron` /
+  `.accordion-panel` styles consistent with the existing `.card` design language.
+- Deleted `views/WipDetailView.vue` (no duplicated table/format logic remains).
+
+Verification: `npm run build` succeeds (30 modules transformed, no errors).
+
+PR: https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/7
+
+# Note on duplication
+
+Logic now lives only in `SummaryView.vue`; a shared component was unnecessary
+since `/wip` no longer renders independently.
 
 # FOLLOW UP
 
