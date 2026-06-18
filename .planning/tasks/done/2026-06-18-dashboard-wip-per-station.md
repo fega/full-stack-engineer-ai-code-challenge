@@ -187,8 +187,10 @@ screenshots of both pages. `/api/spools` returns 200 spools whose per-station
 grouping (29/27/23/27/36/58) matches `/api/dashboard` exactly. `npm run build` and
 `dotnet test` both pass.
 
-PR: https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/2 (same
-branch `feat/dashboard-wip-per-station`; second-pass commits update the existing PR)
+First-pass PR (merged): https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/2
+Second-pass PR (this work): https://github.com/fega/full-stack-engineer-ai-code-challenge/pull/3
+(branch `feat/dashboard-wip-per-station`; PR #2 was already merged, so the
+second-pass commits are a fresh PR on top of `main`.)
 
 
 # FOLLOW UP
