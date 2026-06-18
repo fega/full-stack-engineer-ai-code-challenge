@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Throughput view with documented assumptions
-status: todo
+status: in-progress
 area: fullstack
 ---
 
@@ -24,7 +24,7 @@ area: fullstack
     ```
   - Make the playbook state-move commit (above) on this branch.
   - Keep the worktree path noted here so the next session can find it:
-    `worktree:` ____  ·  `branch:` ____
+    `worktree:` ../wt-throughput-view-with-documented-assumptions  ·  `branch:` feat/throughput-view-with-documented-assumptions
 
 ## Context
 
@@ -53,7 +53,10 @@ Assumptions baked into the starter that must be examined and written down:
 
 ## Task
 
+
+
 <!-- What to do. Use sub-headings or a checklist for multi-step work. -->
+- show the list of due per day in the  Throughput section, in a table
 - [ ] Define and **document** the throughput model: window length, what counts as
       completion, how the rate and "keeping up" are derived, and known limitations.
       Put the write-up in RESOLUTION and/or a short section in `README.md`/`PROCESS.md`.
