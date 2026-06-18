@@ -1,7 +1,7 @@
 ---
 created: 2026-06-18
 title: Throughput view with documented assumptions
-status: in-progress
+status: done
 area: fullstack
 ---
 
@@ -56,16 +56,16 @@ Assumptions baked into the starter that must be examined and written down:
 
 
 <!-- What to do. Use sub-headings or a checklist for multi-step work. -->
-- show the list of due per day in the  Throughput section, in a table
-- [ ] Define and **document** the throughput model: window length, what counts as
+- [x] show the list of due per day in the Throughput section, in a table
+- [x] Define and **document** the throughput model: window length, what counts as
       completion, how the rate and "keeping up" are derived, and known limitations.
       Put the write-up in RESOLUTION and/or a short section in `README.md`/`PROCESS.md`.
-- [ ] Review the `KeepingUp` / `DuePerDay` logic for soundness; adjust if the
+- [x] Review the `KeepingUp` / `DuePerDay` logic for soundness; adjust if the
       comparison is misleading, and document the reasoning.
-- [ ] Confirm the daily series always covers the full window (including zero days).
-- [ ] Add backend test(s) in `src/StratusFabTracker.Tests` using a fixed `IClock`
+- [x] Confirm the daily series always covers the full window (including zero days).
+- [x] Add backend test(s) in `src/StratusFabTracker.Tests` using a fixed `IClock`
       and constructed history to pin daily buckets, the average, and `KeepingUp`.
-- [ ] Make the UI throughput view readable (e.g. a simple trend list/sparkline);
+- [x] Make the UI throughput view readable (e.g. a simple trend list/sparkline);
       keep scope tight within the time-box.
 
 ## Expected output
@@ -108,12 +108,60 @@ Assumptions baked into the starter that must be examined and written down:
 
 # ROOT CAUSE
 
-[if task is fixing a bug, report the root cause here]
+Not a bug fix. The starter throughput view was under-specified and under-documented:
+its assumptions were implicit, it exposed only aggregate rates (no per-day demand),
+and the `KeepingUp`/`DuePerDay` comparison was flagged for a possible unit mismatch.
 
 # RESOLUTION
 
-[place here the resolution of the ticket — include the documented throughput
-assumptions]
+## What changed
+
+- **`ThroughputService.cs`** — kept the trailing-window model but made it explicit
+  and defensible:
+  - Introduced `public const int WindowDays = 14`; window is `[today - 13, today]`,
+    inclusive of today, with `today` from the injected `IClock`.
+  - A **completion** is now a spool's **first** `Installed` event (deduped per spool),
+    bucketed by UTC calendar day — a stray repeat `Installed` can no longer inflate
+    the count.
+  - Added a **per-day "due" series**: `ThroughputDayDto` is now
+    `(Day, Completed, Due)`, populated from each spool's `DueDate`.
+  - The daily series still emits **one row per day across the whole window, including
+    zero days** for both completions and due dates.
+  - `DuePerDay` is now the per-day mean of the same padded series
+    (`daily.Average(x => x.Due)`), consistent with `CompletedPerDay`.
+  - Documented the model and the keeping-up reasoning in XML doc comments.
+- **Web** — `api.ts` `ThroughputDayDto` gains `due: number`; `SummaryView.vue`
+  renders a **per-day table** (Day / Completed / Due) with a small inline bar
+  sparkline on the Completed column and a totals footer.
+- **Tests** — new `ThroughputServiceTests.cs` (7 tests, fixed `FakeClock` at
+  2026-06-18): full-window/zero-day coverage, completion bucketing + window average,
+  first-`Installed`-only dedup, inclusive window boundaries, per-day due buckets +
+  average, and both `KeepingUp` branches. `dotnet test` → **28 passing**.
+- **`PROCESS.md`** — added a "Throughput model (assumptions)" section (the
+  authoritative write-up a reviewer should read).
+
+## Is `KeepingUp` sound? (the flagged concern)
+
+**Yes — not a unit mismatch.** `CompletedPerDay` and `DuePerDay` are both
+*spools/day over the same 14-day window*; since both carry the same `/14`
+denominator, `CompletedPerDay >= DuePerDay` reduces to *"did we complete at least as
+many spools as came due in the window?"*. I therefore kept the formula and clarified
+the code/comments rather than changing it.
+
+It is intentionally **coarse**: it ignores backlog carried in from before the window,
+does not require the completed spools to be the same ones that came due, and the last
+day is partial. It answers *"are we finishing at least as fast as work comes due, on
+average?"* — not per-spool on-time status (that's the dashboard's "Past due" count).
+Full reasoning + "what I'd do next" in `PROCESS.md`.
+
+## Verification
+
+- `GET /api/throughput` confirmed live (port 5099) returning the padded daily series
+  with the new `due` field per day; window `[2026-06-05, today]`.
+- `dotnet test` → 28 passing. `npm run build` (vite) → clean.
+
+PR: <!-- filled after push -->
+
 
 # FOLLOW UP
 

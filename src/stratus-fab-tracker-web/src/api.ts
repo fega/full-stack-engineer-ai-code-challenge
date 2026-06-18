@@ -7,7 +7,7 @@ export type DashboardDto = {
   pastDueCount: number;
 };
 
-export type ThroughputDayDto = { day: string; completed: number };
+export type ThroughputDayDto = { day: string; completed: number; due: number };
 export type ThroughputDto = {
   daily: ThroughputDayDto[];
   completedPerDay: number;
